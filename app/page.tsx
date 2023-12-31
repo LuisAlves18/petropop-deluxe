@@ -15,8 +15,8 @@ const HomePage = () => {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-row items-center gap-10">
+    <main className="flex min-h-screen flex-col lg:flex-row items-center justify-between p-24">
+      <div className="flex flex-col lg:flex-row items-center gap-10">
         {data.map((station:any, index: number)=>{
           return(
           <div key={index}>
