@@ -5,7 +5,6 @@ import useSWR, { mutate } from "swr";
 import Loading from './loading';
 import { GasTypes } from '@/types/GasTypes';
 import DataCard from './components/DataCard';
-import Form from './components/Form';
 const HomePage = () => {
   const fetcher = (url: string, options?: RequestInit) => fetch(url, options).then((res) => res.json());
   const id = [process.env.NEXT_PUBLIC_DEFAULT_STATIONS_TO_FETCH]
