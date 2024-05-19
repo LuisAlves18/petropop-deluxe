@@ -9,7 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.8",
+    "@apollo/server": "^4.9.5",
+    "@as-integrations/next": "^3.0.0",
+    "apollo-datasource-mongodb": "^0.6.0",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
     "next": "14.0.4",
+    "next-auth": "4.24.4",
     "react": "^18",
     "react-dom": "^18",
     "swr": "^2.2.4"

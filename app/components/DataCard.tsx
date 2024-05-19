@@ -8,8 +8,10 @@ type DataCardProps = {
     gasTypes: Array<Object>
 
 }
-const DataCard = ({ name, address, gasTypes }: DataCardProps) => {
-    const filteredData = gasTypes.filter((gasType: any) => gasType.TipoCombustivel === GasTypes.GASOLEO_SIMPLES || gasType.TipoCombustivel === GasTypes.GASOLEO_ESPECIAL)
+const DataCard = ({ name, address, gasTypes,  }: DataCardProps) => {
+    console.log("component Gas types",gasTypes)
+/*     const filteredData = gasTypes.filter((gasType: any) => gasType.TipoCombustivel === GasTypes.GASOLEO_SIMPLES || gasType.TipoCombustivel === GasTypes.GASOLEO_ESPECIAL || gasType.TipoCombustivel === GasTypes.GASOLINA_SIMPLES )
+console.log(filteredData); */
 
     return (
         <>
@@ -19,7 +21,7 @@ const DataCard = ({ name, address, gasTypes }: DataCardProps) => {
                 </h5>
                 <p className="text-sm font-normal text-gray-500 dark:text-gray-400">{address}</p>
                 <ul className="my-4 space-y-3">
-                    {filteredData.map((gasType: any, index: number) => {
+                    {gasTypes?.map((gasType: any, index: number) => {
                         return (
                             <li key={index}>
                                 <a href="#" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
